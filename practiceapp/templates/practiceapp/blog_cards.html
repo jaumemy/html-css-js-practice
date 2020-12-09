@@ -1,14 +1,56 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Blog Cards</title>
+
+    <link rel="stylesheet" href="{% static 'practiceapp/css/master.css' %}">
+
   </head>
   <body>
 
-    <h1>This is a test</h1>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <img src="{% static 'practiceapp/images/rover.jpeg' %}" alt="rover">
+        </div>
+        <div class="card_body">
+          <span class="tag tag-teal">Technology</span>
+          <h4>Why is the Tesla Cybertruck designed the way it is?</h4>
+          <p>An exploration into the truck's polarising design.</p>
+          <div class="user">
+            <img src="{% static 'practiceapp/images/user-1.jpg' %}" alt="user 1">
+            <div class="user-info">
+              <h5>Carrie Brewer</h5>
+              <small>2h ago</small>
+
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
 
     <a href="{% url 'practiceapp:index' %}">Back</a>
+
+    <script src="{% static 'practiceapp/js/master.js' %}" type="text/javascript" ></script>
+
 
   </body>
 </html>
