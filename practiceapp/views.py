@@ -1,7 +1,9 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Create your views here.
 
 def index (request):
-    return HttpResponse("Hello, world! Let's practice some Html, Css and Javascript!")
+    return render(request,"index.html")
+
+def blog_cards(request):
+    return render(request,"practiceapp/blog_cards.html")
