@@ -107,4 +107,7 @@ margin: 0;
 
 .back{
   margin-top: auto;
+  margin-right: 25px;
+  padding-right: 25px;
+  border-right: 15px;
 }

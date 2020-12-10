@@ -10,3 +10,6 @@ def blog_cards(request):
 
 def nice_login(request):
     return render(request,"practiceapp/nice_login.html")
+
+def ads_manager(request):
+    return render(request,"practiceapp/ads_manager.html")

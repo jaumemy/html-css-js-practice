@@ -139,3 +139,12 @@ input:not([type='checkbox']){
 .back{
   margin-top: auto;
 }
+
+@media(max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+  form{
+    border-right: 0;
+  }
+}
